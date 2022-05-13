@@ -2,6 +2,9 @@
 Here we are simulating  a programme which deals mutual exclusion with the pthread.h library to solve de problem of process deadlock in an Os.
 Its a c language and am conpiling on CodeBlock Ide you will be set to install the pthread.h library on the Ide.
 
+The idea is that first a thread expresses its desire to acquire a lock and sets flag[self] = 1 and then gives the other thread a chance to acquire the lock.
+If the thread desires to acquire the lock, then, it gets the lock and passes the chance to the 1st thread. If it does not desire to get the lock then the while loop breaks and the 1st thread gets the chance.
+
 How to install:
 
 The procedure to incorporate the library into MinGW for CodeBlocks is as follows:
